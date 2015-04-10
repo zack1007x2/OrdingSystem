@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login" >
+
+    <TextView
+        android:id="@+id/textID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textPW"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="245dp"
+        android:text="@string/PttextID"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textPW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textID"
+        android:layout_marginTop="34dp"
+        android:layout_toLeftOf="@+id/editTextID"
+        android:text="@string/PttextPW"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textID"
+        android:layout_alignBottom="@+id/textID"
+        android:layout_alignLeft="@+id/btgoback"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextPW"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textPW"
+        android:layout_alignLeft="@+id/editTextID"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPW"
+        android:layout_marginTop="39dp"
+        android:layout_toRightOf="@+id/textPW"
+        android:minWidth="250dip"
+        android:text="@string/btPtlogin" />
+
+    <Button
+        android:id="@+id/btgoback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:minWidth="250dip"
+        android:text="@string/btPtgoback" />
+
+</RelativeLayout>

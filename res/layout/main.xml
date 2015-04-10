@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main" >
+
+    <Button
+        android:id="@+id/btprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="463dp"
+        android:minHeight="60dip"
+        android:minWidth="400dip"
+        android:text="@string/btPtprofile"/>
+
+    <Button
+        android:id="@+id/btorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btprofile"
+        android:layout_alignLeft="@+id/btprofile"
+        android:layout_marginBottom="151dp"
+        android:minHeight="60dip"
+        android:minWidth="400dip" 
+        android:text="@string/btPtorder"/>
+
+</RelativeLayout>

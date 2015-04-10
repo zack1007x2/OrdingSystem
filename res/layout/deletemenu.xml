@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/textViewRestID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="214dp"
+        android:layout_marginTop="247dp"
+        android:text="@string/PttextRID"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvRestID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewRestID"
+        android:layout_alignBottom="@+id/textViewRestID"
+        android:layout_toRightOf="@+id/textViewRestID"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btgoback"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btdelet"
+        android:layout_below="@+id/btdelet"
+        android:text="@string/btPtgoback" />
+
+    <EditText
+        android:id="@+id/editTextItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRestID"
+        android:layout_marginTop="98dp"
+        android:layout_toRightOf="@+id/textViewItemName"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextItemName"
+        android:layout_alignBottom="@+id/editTextItemName"
+        android:layout_alignLeft="@+id/btdelet"
+        android:text="@string/PttextOItem"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btdelet"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextItemName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:text="@string/btPtdelet" />
+
+    <Button
+        android:id="@+id/btre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btdelet"
+        android:layout_alignLeft="@+id/btdelet"
+        android:layout_alignRight="@+id/btdelet"
+        android:layout_marginBottom="48dp"
+        android:text="@string/btPtre" />
+
+</RelativeLayout>

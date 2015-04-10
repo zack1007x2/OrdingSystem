@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ordingsystem"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ordingsystem.Main"
+            android:label="@string/app_name" >
+			<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ordingsystem.login"
+            android:label="@string/btPtprofile" >
+        </activity>
+        <activity
+            android:name="com.example.ordingsystem.RestaurantMain"
+            android:label="@string/btPtinsert" >
+        </activity>
+        <activity
+            android:name="com.example.ordingsystem.menu"
+            android:label="@string/btPtorder" >
+        </activity>
+        <activity
+            android:name="com.example.ordingsystem.MenuInsert">
+        </activity>
+        <activity
+            android:name="com.example.ordingsystem.MenuEdit">
+        </activity>
+        <activity
+            android:name="com.example.ordingsystem.MenuDelete">
+        </activity>
+        <activity
+            android:name="com.example.ordingsystem.RestMain">
+		</activity>
+		<activity
+            android:name="com.example.ordingsystem.OrderCheck">
+		</activity>
+		<activity
+            android:name="com.example.ordingsystem.Profit">
+		</activity>
+    </application>
+
+</manifest>

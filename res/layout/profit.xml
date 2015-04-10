@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/byDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labDay"
+        android:layout_alignBottom="@+id/labDay"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/labDay"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/labDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="230dp"
+        android:text="@string/Ptday"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/labMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/labDay"
+        android:layout_below="@+id/labDay"
+        android:layout_marginTop="79dp"
+        android:text="@string/Ptmonth"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/byMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labMonth"
+        android:layout_alignBottom="@+id/labMonth"
+        android:layout_alignLeft="@+id/labDay"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

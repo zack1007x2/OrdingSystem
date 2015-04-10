@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btinsert"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="329dp"
+        android:text="@string/btPtinsert" />
+
+    <Button
+        android:id="@+id/btedit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btinsert"
+        android:layout_below="@+id/btinsert"
+        android:layout_marginTop="68dp"
+        android:text="@string/btPtedit" />
+
+    <Button
+        android:id="@+id/btdelet"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btedit"
+        android:layout_below="@+id/btedit"
+        android:layout_marginTop="68dp"
+        android:text="@string/btPtdelet" />
+
+    <Button
+        android:id="@+id/btgoback"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btdelet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="@string/btPtgoback" />
+
+</RelativeLayout>

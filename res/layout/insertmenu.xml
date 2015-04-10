@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewRestID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="214dp"
+        android:layout_marginTop="247dp"
+        android:text="@string/PttextRID"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewItemID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewRestID"
+        android:layout_below="@+id/textViewRestID"
+        android:layout_marginTop="40dp"
+        android:text="@string/PttextOID"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewItemID"
+        android:layout_below="@+id/textViewItemID"
+        android:layout_marginTop="40dp"
+        android:text="@string/PttextOItem"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewItemName"
+        android:layout_below="@+id/textViewItemName"
+        android:layout_marginTop="40dp"
+        android:text="@string/PttextOPrice"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextItemID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewItemID"
+        android:layout_alignBottom="@+id/textViewItemID"
+        android:layout_toRightOf="@+id/textViewItemID"
+        android:ems="10" 
+        android:inputType="text" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewItemName"
+        android:layout_alignBottom="@+id/textViewItemName"
+        android:layout_toRightOf="@+id/textViewItemName"
+        android:ems="10" 
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewItemPrice"
+        android:layout_alignBottom="@+id/textViewItemPrice"
+        android:layout_toRightOf="@+id/textViewItemPrice"
+        android:ems="10" 
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btinsert"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/btPtinsert" />
+
+    <Button
+        android:id="@+id/btre"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btgoback"
+        android:layout_below="@+id/btinsert"
+        android:text="@string/btPtre"/>
+
+    <TextView
+        android:id="@+id/tvRestID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewRestID"
+        android:layout_alignBottom="@+id/textViewRestID"
+        android:layout_toRightOf="@+id/textViewRestID"
+        android:text="TTTT"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btgoback"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btinsert"
+        android:layout_below="@+id/btre"
+        android:text="@string/btPtgoback" />
+
+</RelativeLayout>
